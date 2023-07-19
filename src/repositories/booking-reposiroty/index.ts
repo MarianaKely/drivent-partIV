@@ -3,7 +3,6 @@ import { prisma } from "@/config";
 import { Booking , Room } from "@prisma/client";
 
 
-
 async function theRoom (roomId: number): Promise<Room & { book: number }> {
 
    const book = await prisma.booking.count({
