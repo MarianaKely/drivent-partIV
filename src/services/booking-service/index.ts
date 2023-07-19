@@ -7,7 +7,6 @@ import enrollmentRepository from "@/repositories/enrollment-repository";
 
 
 
-
 async function createBooking (userId: number, roomId: number): Promise<{ bookingId: number }> {
 
     const user = await enrollmentRepository.findWithAddressByUserId(userId);
