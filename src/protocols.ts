@@ -63,9 +63,3 @@ export type InputTicketBody = {
   ticketTypeId: number;
 };
 
-export type bookingCongigs = {
-
-  roomId: number;
-  userId: number;
-
-};
